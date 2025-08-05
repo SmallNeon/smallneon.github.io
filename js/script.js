@@ -3,10 +3,27 @@
 // Language toggle functionality
 let currentLanguage = 'en';
 
+// Auto-detect browser language on page load
+function detectBrowserLanguage() {
+    // Get browser language
+    const browserLang = navigator.language || navigator.userLanguage;
+    
+    // Check if browser language is Chinese (simplified or traditional)
+    if (browserLang.startsWith('zh')) {
+        return 'zh';
+    }
+    
+    // Default to English for all other languages
+    return 'en';
+}
+
 function toggleLanguage() {
     currentLanguage = currentLanguage === 'en' ? 'zh' : 'en';
     updateLanguageContent();
     updateLanguageButton();
+    
+    // Store user's language preference in localStorage
+    localStorage.setItem('preferredLanguage', currentLanguage);
 }
 
 function updateLanguageContent() {
@@ -22,6 +39,9 @@ function updateLanguageContent() {
             element.textContent = enText;
         }
     });
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = currentLanguage === 'zh' ? 'zh-CN' : 'en';
 }
 
 function updateLanguageButton() {
@@ -32,7 +52,17 @@ function updateLanguageButton() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize language content
+    // Initialize language based on user preference or browser language
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        // Use saved preference if available
+        currentLanguage = savedLanguage;
+    } else {
+        // Auto-detect browser language
+        currentLanguage = detectBrowserLanguage();
+    }
+    
+    // Update content and button based on detected/saved language
     updateLanguageContent();
     updateLanguageButton();
 
@@ -60,12 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         scrollPosition = window.scrollY;
         
-        if (scrollPosition > 100) {
-            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        if (scrollPosition > 50) {
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
-            navbar.style.background = 'white';
+            navbar.classList.remove('scrolled');
         }
     });
 

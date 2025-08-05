@@ -9,27 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1 data-en="Liangyu Song" data-zh="宋良宇">Liangyu Song</h1>
-                <p class="subtitle" data-en="Electrical Engineering & Computer Science" data-zh="电气工程与计算机科学">Electrical Engineering & Computer Science</p>
-                <div class="contact-info">
-                    <a href="mailto:andrewsong.dev@gmail.com"><i class="fas fa-envelope"></i> andrewsong.dev@gmail.com</a>
-                    <a href="tel:+19494910620"><i class="fas fa-phone"></i> (+1) 949-491-0620</a>
-                    <a href="tel:+8613593183233"><i class="fas fa-phone"></i> (+86) 135-9318-3233</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <nav id="navbar">
+    <!-- Fixed Navigation -->
+    <nav id="navbar" class="fixed-nav">
         <div class="container">
             <ul class="nav-links">
+                <li><a href="#hero" data-en="Home" data-zh="首页">Home</a></li>
                 <li><a href="#about" data-en="About" data-zh="关于我">About</a></li>
                 <li><a href="#education" data-en="Education" data-zh="教育背景">Education</a></li>
                 <li><a href="#experience" data-en="Experience" data-zh="项目经历">Experience</a></li>
-                <li><a href="#skills" data-en="Skills" data-zh="技能">Skills</a></li>
                 <li><a href="#contact" data-en="Contact" data-zh="联系方式">Contact</a></li>
             </ul>
             <div class="lang-toggle">
@@ -43,27 +30,133 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1 class="hero-name" data-en="Liangyu Song" data-zh="宋良宇">Liangyu Song</h1>
+                <p class="hero-title" data-en="Electrical Engineering & Computer Science" data-zh="电气工程与计算机科学">Electrical Engineering & Computer Science</p>
+                <p class="hero-description" data-en="Passionate AI/ML Engineer and Full-Stack Developer with expertise in cutting-edge technologies, from deep learning to modern DevOps. Transforming complex problems into innovative solutions." data-zh="热衷于AI/ML工程和全栈开发的技术专家，精通前沿技术，从深度学习到现代DevOps。将复杂问题转化为创新解决方案。">Passionate AI/ML Engineer and Full-Stack Developer with expertise in cutting-edge technologies, from deep learning to modern DevOps. Transforming complex problems into innovative solutions.</p>
+                <div class="hero-contact">
+                    <a href="mailto:andrewsong.dev@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>andrewsong.dev@gmail.com</span>
+                    </a>
+                    <div class="phone-numbers">
+                        <a href="tel:+19494910620"><i class="fas fa-phone"></i> (+1) 949-491-0620</a>
+                        <a href="tel:+8613593183233"><i class="fas fa-phone"></i> (+86) 135-9318-3233</a>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#about" class="cta-btn primary" data-en="Learn More" data-zh="了解更多">Learn More</a>
+                    <a href="#contact" class="cta-btn secondary" data-en="Get In Touch" data-zh="联系我">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image">
+                    <img src="MyPhoto.jpeg" alt="Liangyu Song" />
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p data-en="I am a graduate student at the University of California, Irvine, pursuing a Master's degree in Electrical Engineering and Computer Science. With a strong background in communication engineering and research experience in medical imaging and system security, I am passionate about applying my technical skills to solve complex problems." 
-                       data-zh="我是加州大学尔湾分校的研究生，正在攻读电气工程与计算机科学硕士学位。凭借扎实的通信工程背景以及在医学影像和系统安全方面的研究经验，我热衷于运用技术技能解决复杂问题。">I am a graduate student at the University of California, Irvine, pursuing a Master's degree in Electrical Engineering and Computer Science. With a strong background in communication engineering and research experience in medical imaging and system security, I am passionate about applying my technical skills to solve complex problems.</p>
+                    <p data-en="I am a recent graduate from the University of California, Irvine, with a Master's degree in Electrical Engineering and Computer Science. With a strong background in communication engineering and research experience in medical imaging and system security, I am passionate about applying my technical skills to solve complex problems." 
+                       data-zh="我是加州大学尔湾分校电气工程与计算机科学硕士毕业生。凭借扎实的通信工程背景以及在医学影像和系统安全方面的研究经验，我热衷于运用技术技能解决复杂问题。">I am a recent graduate from the University of California, Irvine, with a Master's degree in Electrical Engineering and Computer Science. With a strong background in communication engineering and research experience in medical imaging and system security, I am passionate about applying my technical skills to solve complex problems.</p>
                     <p data-en="My interests span across software engineering, full-stack development, backend systems, communications, AI/ML, and embedded systems. I have experience in implementing machine learning models, developing automated systems, and conducting research in various technical domains." 
                        data-zh="我的兴趣涵盖软件工程、全栈开发、后端系统、通信、人工智能/机器学习和嵌入式系统。我在实现机器学习模型、开发自动化系统以及在各种技术领域进行研究方面都有丰富经验。">My interests span across software engineering, full-stack development, backend systems, communications, AI/ML, and embedded systems. I have experience in implementing machine learning models, developing automated systems, and conducting research in various technical domains.</p>
                 </div>
-                <div class="target-positions">
-                    <h3 data-en="Target Positions" data-zh="目标职位">Target Positions</h3>
-                    <div class="positions-grid">
-                        <div class="position-item"><i class="fas fa-code"></i> <span data-en="Software Engineer" data-zh="软件工程师">Software Engineer</span></div>
-                        <div class="position-item"><i class="fas fa-layer-group"></i> <span data-en="Full-Stack Engineer" data-zh="全栈工程师">Full-Stack Engineer</span></div>
-                        <div class="position-item"><i class="fas fa-server"></i> <span data-en="Backend Engineer" data-zh="后端工程师">Backend Engineer</span></div>
-                        <div class="position-item"><i class="fas fa-broadcast-tower"></i> <span data-en="Communications Engineer" data-zh="通信工程师">Communications Engineer</span></div>
-                        <div class="position-item"><i class="fas fa-cogs"></i> <span data-en="Systems Engineer" data-zh="系统工程师">Systems Engineer</span></div>
-                        <div class="position-item"><i class="fas fa-network-wired"></i> <span data-en="Network Engineer" data-zh="网络工程师">Network Engineer</span></div>
-                        <div class="position-item"><i class="fas fa-brain"></i> <span data-en="AI/ML Engineer" data-zh="AI/ML工程师">AI/ML Engineer</span></div>
-                        <div class="position-item"><i class="fas fa-microchip"></i> <span data-en="Embedded Engineer" data-zh="嵌入式工程师">Embedded Engineer</span></div>
+                
+                <div class="skills-section">
+                    <h3 data-en="Technical Skills" data-zh="技术技能">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-code"></i> <span data-en="Programming Languages" data-zh="编程语言">Programming Languages</span></h4>
+                            <ul class="skill-list">
+                                <li>Python</li>
+                                <li>C</li>
+                                <li>Matlab</li>
+                                <li>SQL</li>
+                                <li><span data-en="Verilog HDL (basic)" data-zh="Verilog HDL（基础）">Verilog HDL (basic)</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-robot"></i> <span data-en="AI/ML Technologies" data-zh="AI/ML技术">AI/ML Technologies</span></h4>
+                            <ul class="skill-list">
+                                <li>TensorFlow</li>
+                                <li>PyTorch</li>
+                                <li><span data-en="OpenAI API" data-zh="OpenAI API">OpenAI API</span></li>
+                                <li><span data-en="Claude API" data-zh="Claude API">Claude API</span></li>
+                                <li><span data-en="Local LLM Deployment" data-zh="本地大模型部署">Local LLM Deployment</span></li>
+                                <li data-en="Large-scale model training in cluster environments" data-zh="集群环境下大规模模型训练">Large-scale model training in cluster environments</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-database"></i> <span data-en="Data Processing & Analytics" data-zh="数据处理与分析">Data Processing & Analytics</span></h4>
+                            <ul class="skill-list">
+                                <li>Pandas</li>
+                                <li><span data-en="Data Visualization" data-zh="数据可视化">Data Visualization</span></li>
+                                <li><span data-en="Statistical Analysis" data-zh="统计分析">Statistical Analysis</span></li>
+                                <li><span data-en="ETL Pipelines" data-zh="ETL数据管道">ETL Pipelines</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-tools"></i> <span data-en="Development Tools" data-zh="开发工具">Development Tools</span></h4>
+                            <ul class="skill-list">
+                                <li><span data-en="VS Code / Cursor" data-zh="VS Code / Cursor">VS Code / Cursor</span></li>
+                                <li><span data-en="Jupyter Lab" data-zh="Jupyter Lab">Jupyter Lab</span></li>
+                                <li><span data-en="Git Version Control" data-zh="Git版本控制">Git Version Control</span></li>
+                                <li>LaTeX</li>
+                                <li>Vivado Design Suite</li>
+                                <li>Office</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-cloud"></i> <span data-en="DevOps & Infrastructure" data-zh="DevOps与基础设施">DevOps & Infrastructure</span></h4>
+                            <ul class="skill-list">
+                                <li><span data-en="Docker Containerization" data-zh="Docker容器化">Docker Containerization</span></li>
+                                <li><span data-en="CI/CD Workflows" data-zh="CI/CD工作流">CI/CD Workflows</span></li>
+                                <li><span data-en="Web Deployment" data-zh="网站部署">Web Deployment</span></li>
+                                <li><span data-en="CDN Content Distribution" data-zh="CDN内容分发">CDN Content Distribution</span></li>
+                                <li><span data-en="Reverse Proxy" data-zh="反向代理">Reverse Proxy</span></li>
+                                <li><span data-en="Encrypted Tunneling" data-zh="加密隧道">Encrypted Tunneling</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-shield-alt"></i> <span data-en="Security & Network" data-zh="安全与网络">Security & Network</span></h4>
+                            <ul class="skill-list">
+                                <li><span data-en="Zero Trust Architecture" data-zh="零信任架构">Zero Trust Architecture</span></li>
+                                <li data-en="Software vulnerability analysis" data-zh="软件漏洞分析">Software vulnerability analysis</li>
+                                <li data-en="Reverse engineering" data-zh="逆向工程">Reverse engineering</li>
+                                <li data-en="Malware analysis" data-zh="恶意软件分析">Malware analysis</li>
+                                <li data-en="Fuzzing" data-zh="模糊测试">Fuzzing</li>
+                                <li data-en="Network security" data-zh="网络安全">Network security</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-language"></i> <span data-en="Languages" data-zh="语言能力">Languages</span></h4>
+                            <ul class="skill-list">
+                                <li data-en="Mandarin (native)" data-zh="中文（母语）">Mandarin (native)</li>
+                                <li data-en="English (fluent)" data-zh="英语（流利）">English (fluent)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-palette"></i> <span data-en="Others" data-zh="其他">Others</span></h4>
+                            <ul class="skill-list">
+                                <li data-en="Violin (proficient)" data-zh="小提琴（熟练）">Violin (proficient)</li>
+                                <li data-en="Painting (proficient)" data-zh="绘画（熟练）">Painting (proficient)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,68 +268,6 @@
                     <li data-en="Prepared anisotropic flake alloys using composite coupling agent technology, and incorporated high thermal conductivity magnetic composites to enhance the material's thermal conduction" data-zh="使用复合偶联剂技术制备各向异性片状合金，并加入高导热磁性复合材料以增强材料的热传导性">Prepared anisotropic flake alloys using composite coupling agent technology, and incorporated high thermal conductivity magnetic composites to enhance the material's thermal conduction</li>
                     <li data-en="Collaborated with BXLLD and ZTE; applied for multiple patents; won a Silver Award at the 7th China International Internet+ Innovation and Entrepreneurship Competition" data-zh="与BXLLD和中兴通讯合作；申请多项专利；获得第七届中国国际"互联网+"大学生创新创业大赛银奖">Collaborated with BXLLD and ZTE; applied for multiple patents; won a Silver Award at the 7th China International "Internet+" Innovation and Entrepreneurship Competition</li>
                 </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title" data-en="Skills" data-zh="技能">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> <span data-en="Programming Languages" data-zh="编程语言">Programming Languages</span></h3>
-                    <ul class="skill-list">
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>Matlab</li>
-                        <li>SQL</li>
-                        <li><span data-en="Verilog HDL (basic)" data-zh="Verilog HDL（基础）">Verilog HDL (basic)</span></li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> <span data-en="Deep Learning Frameworks" data-zh="深度学习框架">Deep Learning Frameworks</span></h3>
-                    <ul class="skill-list">
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li data-en="Large-scale model training in cluster environments" data-zh="集群环境下大规模模型训练">Large-scale model training in cluster environments</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> <span data-en="Software Tools" data-zh="软件工具">Software Tools</span></h3>
-                    <ul class="skill-list">
-                        <li>Vivado Design Suite</li>
-                        <li>Proteus</li>
-                        <li>Multisim</li>
-                        <li>μVision</li>
-                        <li>LINGO</li>
-                        <li>Office</li>
-                        <li>LaTeX</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> <span data-en="Security Skills" data-zh="安全技能">Security Skills</span></h3>
-                    <ul class="skill-list">
-                        <li data-en="Software vulnerability analysis" data-zh="软件漏洞分析">Software vulnerability analysis</li>
-                        <li data-en="Reverse engineering" data-zh="逆向工程">Reverse engineering</li>
-                        <li data-en="Malware analysis" data-zh="恶意软件分析">Malware analysis</li>
-                        <li data-en="Fuzzing" data-zh="模糊测试">Fuzzing</li>
-                        <li data-en="Basic network security" data-zh="基础网络安全">Basic network security</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> <span data-en="Languages" data-zh="语言能力">Languages</span></h3>
-                    <ul class="skill-list">
-                        <li data-en="Mandarin (native)" data-zh="中文（母语）">Mandarin (native)</li>
-                        <li data-en="English (daily communication)" data-zh="英语（日常交流）">English (daily communication)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-palette"></i> <span data-en="Others" data-zh="其他">Others</span></h3>
-                    <ul class="skill-list">
-                        <li data-en="Violin (proficient)" data-zh="小提琴（熟练）">Violin (proficient)</li>
-                        <li data-en="Painting (proficient)" data-zh="绘画（熟练）">Painting (proficient)</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
