@@ -12,10 +12,10 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <h1>Liangyu Song</h1>
-                <p class="subtitle">Electrical Engineering & Computer Science Professional</p>
+                <h1 data-en="Liangyu Song" data-zh="宋良宇">Liangyu Song</h1>
+                <p class="subtitle" data-en="Electrical Engineering & Computer Science" data-zh="电气工程与计算机科学">Electrical Engineering & Computer Science</p>
                 <div class="contact-info">
-                    <a href="mailto:liangys5@uci.edu"><i class="fas fa-envelope"></i> liangys5@uci.edu</a>
+                    <a href="mailto:andrewsong.dev@gmail.com"><i class="fas fa-envelope"></i> andrewsong.dev@gmail.com</a>
                     <a href="tel:+19494910620"><i class="fas fa-phone"></i> (+1) 949-491-0620</a>
                     <a href="tel:+8613593183233"><i class="fas fa-phone"></i> (+86) 135-9318-3233</a>
                 </div>
@@ -26,12 +26,15 @@
     <nav id="navbar">
         <div class="container">
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-en="About" data-zh="关于我">About</a></li>
+                <li><a href="#education" data-en="Education" data-zh="教育背景">Education</a></li>
+                <li><a href="#experience" data-en="Experience" data-zh="项目经历">Experience</a></li>
+                <li><a href="#skills" data-en="Skills" data-zh="技能">Skills</a></li>
+                <li><a href="#contact" data-en="Contact" data-zh="联系方式">Contact</a></li>
             </ul>
+            <div class="lang-toggle">
+                <button id="langBtn" onclick="toggleLanguage()">中文</button>
+            </div>
             <div class="hamburger">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -42,23 +45,25 @@
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a graduate student at the University of California, Irvine, pursuing a Master's degree in Electrical Engineering and Computer Science. With a strong background in communication engineering and research experience in medical imaging and system security, I am passionate about applying my technical skills to solve complex problems.</p>
-                    <p>My interests span across software engineering, full-stack development, backend systems, communications, AI/ML, and embedded systems. I have experience in implementing machine learning models, developing automated systems, and conducting research in various technical domains.</p>
+                    <p data-en="I am a graduate student at the University of California, Irvine, pursuing a Master's degree in Electrical Engineering and Computer Science. With a strong background in communication engineering and research experience in medical imaging and system security, I am passionate about applying my technical skills to solve complex problems." 
+                       data-zh="我是加州大学尔湾分校的研究生，正在攻读电气工程与计算机科学硕士学位。凭借扎实的通信工程背景以及在医学影像和系统安全方面的研究经验，我热衷于运用技术技能解决复杂问题。">I am a graduate student at the University of California, Irvine, pursuing a Master's degree in Electrical Engineering and Computer Science. With a strong background in communication engineering and research experience in medical imaging and system security, I am passionate about applying my technical skills to solve complex problems.</p>
+                    <p data-en="My interests span across software engineering, full-stack development, backend systems, communications, AI/ML, and embedded systems. I have experience in implementing machine learning models, developing automated systems, and conducting research in various technical domains." 
+                       data-zh="我的兴趣涵盖软件工程、全栈开发、后端系统、通信、人工智能/机器学习和嵌入式系统。我在实现机器学习模型、开发自动化系统以及在各种技术领域进行研究方面都有丰富经验。">My interests span across software engineering, full-stack development, backend systems, communications, AI/ML, and embedded systems. I have experience in implementing machine learning models, developing automated systems, and conducting research in various technical domains.</p>
                 </div>
                 <div class="target-positions">
-                    <h3>Target Positions</h3>
+                    <h3 data-en="Target Positions" data-zh="目标职位">Target Positions</h3>
                     <div class="positions-grid">
-                        <div class="position-item"><i class="fas fa-code"></i> Software Engineer</div>
-                        <div class="position-item"><i class="fas fa-layer-group"></i> Full-Stack Engineer</div>
-                        <div class="position-item"><i class="fas fa-server"></i> Backend Engineer</div>
-                        <div class="position-item"><i class="fas fa-broadcast-tower"></i> Communications Engineer</div>
-                        <div class="position-item"><i class="fas fa-cogs"></i> Systems Engineer</div>
-                        <div class="position-item"><i class="fas fa-network-wired"></i> Network Engineer</div>
-                        <div class="position-item"><i class="fas fa-brain"></i> AI/ML Engineer</div>
-                        <div class="position-item"><i class="fas fa-microchip"></i> Embedded Engineer</div>
+                        <div class="position-item"><i class="fas fa-code"></i> <span data-en="Software Engineer" data-zh="软件工程师">Software Engineer</span></div>
+                        <div class="position-item"><i class="fas fa-layer-group"></i> <span data-en="Full-Stack Engineer" data-zh="全栈工程师">Full-Stack Engineer</span></div>
+                        <div class="position-item"><i class="fas fa-server"></i> <span data-en="Backend Engineer" data-zh="后端工程师">Backend Engineer</span></div>
+                        <div class="position-item"><i class="fas fa-broadcast-tower"></i> <span data-en="Communications Engineer" data-zh="通信工程师">Communications Engineer</span></div>
+                        <div class="position-item"><i class="fas fa-cogs"></i> <span data-en="Systems Engineer" data-zh="系统工程师">Systems Engineer</span></div>
+                        <div class="position-item"><i class="fas fa-network-wired"></i> <span data-en="Network Engineer" data-zh="网络工程师">Network Engineer</span></div>
+                        <div class="position-item"><i class="fas fa-brain"></i> <span data-en="AI/ML Engineer" data-zh="AI/ML工程师">AI/ML Engineer</span></div>
+                        <div class="position-item"><i class="fas fa-microchip"></i> <span data-en="Embedded Engineer" data-zh="嵌入式工程师">Embedded Engineer</span></div>
                     </div>
                 </div>
             </div>
@@ -67,29 +72,29 @@
 
     <section id="education" class="section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title" data-en="Education" data-zh="教育背景">Education</h2>
             <div class="education-item">
                 <div class="edu-header">
-                    <h3>University of California, Irvine</h3>
+                    <h3 data-en="University of California, Irvine" data-zh="加州大学尔湾分校">University of California, Irvine</h3>
                     <p class="date">Aug 2023 – Jul 2025</p>
                 </div>
-                <p class="degree">M.S. in Electrical Engineering and Computer Science</p>
+                <p class="degree" data-en="M.S. in Electrical Engineering and Computer Science" data-zh="电气工程与计算机科学硕士">M.S. in Electrical Engineering and Computer Science</p>
                 <ul class="edu-details">
-                    <li><strong>GPA:</strong> 3.59 / 4.0</li>
-                    <li><strong>Core Courses:</strong> Machine Learning Theory I/II, Data Knowledge Engineering, Digital Signal Processing</li>
-                    <li><strong>Advanced Topics:</strong> Deep Learning Accelerator Design (A+), System-on-Chip Design (A), Digital Communication (A)</li>
-                    <li><strong>Research:</strong> Individual Research in Medical Imaging, Advanced System Security</li>
+                    <li><strong data-en="GPA:" data-zh="GPA:">GPA:</strong> 3.59 / 4.0</li>
+                    <li><strong data-en="Core Courses:" data-zh="核心课程:">Core Courses:</strong> <span data-en="Machine Learning Theory I/II, Data Knowledge Engineering, Digital Signal Processing" data-zh="机器学习理论I/II、数据知识工程、数字信号处理">Machine Learning Theory I/II, Data Knowledge Engineering, Digital Signal Processing</span></li>
+                    <li><strong data-en="Advanced Topics:" data-zh="高级主题:">Advanced Topics:</strong> <span data-en="Deep Learning Accelerator Design (A+), System-on-Chip Design (A), Digital Communication (A)" data-zh="深度学习加速器设计(A+)、片上系统设计(A)、数字通信(A)">Deep Learning Accelerator Design (A+), System-on-Chip Design (A), Digital Communication (A)</span></li>
+                    <li><strong data-en="Research:" data-zh="研究方向:">Research:</strong> <span data-en="Individual Research in Medical Imaging, Advanced System Security" data-zh="医学影像个人研究、高级系统安全">Individual Research in Medical Imaging, Advanced System Security</span></li>
                 </ul>
             </div>
             <div class="education-item">
                 <div class="edu-header">
-                    <h3>Nanjing University of Posts and Telecommunications</h3>
+                    <h3 data-en="Nanjing University of Posts and Telecommunications" data-zh="南京邮电大学">Nanjing University of Posts and Telecommunications</h3>
                     <p class="date">Sep 2019 – Jul 2023</p>
                 </div>
-                <p class="degree">Bachelor of Engineering in Communication Engineering</p>
+                <p class="degree" data-en="Bachelor of Engineering in Communication Engineering" data-zh="通信工程学士">Bachelor of Engineering in Communication Engineering</p>
                 <ul class="edu-details">
-                    <li><strong>Academic Standing:</strong> Top 15% of class</li>
-                    <li><strong>Major Courses:</strong> Digital Circuits, Analog Circuit Design, High-Level Language Programming, Microcomputer Principles, Communication Principles</li>
+                    <li><strong data-en="Academic Standing:" data-zh="学术成绩:">Academic Standing:</strong> <span data-en="Top 15% of class" data-zh="班级前15%">Top 15% of class</span></li>
+                    <li><strong data-en="Major Courses:" data-zh="主要课程:">Major Courses:</strong> <span data-en="Digital Circuits, Analog Circuit Design, High-Level Language Programming, Microcomputer Principles, Communication Principles" data-zh="数字电路、模拟电路设计、高级语言程序设计、微机原理、通信原理">Digital Circuits, Analog Circuit Design, High-Level Language Programming, Microcomputer Principles, Communication Principles</span></li>
                 </ul>
             </div>
         </div>
@@ -97,7 +102,7 @@
 
     <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Research and Project Experience</h2>
+            <h2 class="section-title" data-en="Research and Project Experience" data-zh="研究和项目经历">Research and Project Experience</h2>
             
 
             
@@ -105,70 +110,70 @@
             
             <div class="exp-item">
                 <div class="exp-header">
-                    <h3>Research Assistant</h3>
+                    <h3 data-en="Research Assistant" data-zh="研究助理">Research Assistant</h3>
                     <p class="date">Oct 2024 – Present</p>
                 </div>
-                <p class="organization">UCI Radiological Imaging Laboratory | Advisor: Prof. Sabee Molloi</p>
+                <p class="organization" data-en="UCI Radiological Imaging Laboratory | Advisor: Prof. Sabee Molloi" data-zh="UCI放射影像实验室 | 导师：Sabee Molloi教授">UCI Radiological Imaging Laboratory | Advisor: Prof. Sabee Molloi</p>
                 <ul class="exp-details">
-                    <li>Implemented a CycleGAN model using PyTorch for medical image translation and generation, including network architecture design, loss function selection, and hyperparameter tuning</li>
-                    <li>Handled data cleaning and preprocessing to improve the consistency and quality of imaging data</li>
+                    <li data-en="Implemented a CycleGAN model using PyTorch for medical image translation and generation, including network architecture design, loss function selection, and hyperparameter tuning" data-zh="使用PyTorch实现CycleGAN模型进行医学图像转换和生成，包括网络架构设计、损失函数选择和超参数调优">Implemented a CycleGAN model using PyTorch for medical image translation and generation, including network architecture design, loss function selection, and hyperparameter tuning</li>
+                    <li data-en="Handled data cleaning and preprocessing to improve the consistency and quality of imaging data" data-zh="处理数据清洗和预处理，提高影像数据的一致性和质量">Handled data cleaning and preprocessing to improve the consistency and quality of imaging data</li>
                 </ul>
             </div>
             <div class="exp-item">
                 <div class="exp-header">
-                    <h3>Teaching Assistant</h3>
+                    <h3 data-en="Teaching Assistant" data-zh="助教">Teaching Assistant</h3>
                     <p class="date">Jan 2025 – Mar 2025</p>
                 </div>
-                <p class="organization">Department of Electrical Engineering, UCI | Supervisor: Prof. Wei-Fang Chen</p>
+                <p class="organization" data-en="Department of Electrical Engineering, UCI | Supervisor: Prof. Wei-Fang Chen" data-zh="UCI电气工程系 | 指导老师：Wei-Fang Chen教授">Department of Electrical Engineering, UCI | Supervisor: Prof. Wei-Fang Chen</p>
                 <ul class="exp-details">
-                    <li>Served as a TA for EECS145 (Electrical Engineering Analysis), responsible for grading assignments and managing scores</li>
-                    <li>Developed a semi-automated grading system for splitting assignment content and standardizing scoring criteria</li>
-                    <li>Created an automated student score management system to increase teaching efficiency</li>
+                    <li data-en="Served as a TA for EECS145 (Electrical Engineering Analysis), responsible for grading assignments and managing scores" data-zh="担任EECS145（电气工程分析）助教，负责作业批改和成绩管理">Served as a TA for EECS145 (Electrical Engineering Analysis), responsible for grading assignments and managing scores</li>
+                    <li data-en="Developed a semi-automated grading system for splitting assignment content and standardizing scoring criteria" data-zh="开发半自动化评分系统，用于拆分作业内容和标准化评分标准">Developed a semi-automated grading system for splitting assignment content and standardizing scoring criteria</li>
+                    <li data-en="Created an automated student score management system to increase teaching efficiency" data-zh="创建自动化学生成绩管理系统以提高教学效率">Created an automated student score management system to increase teaching efficiency</li>
                 </ul>
             </div>
             <div class="exp-item">
                 <div class="exp-header">
-                    <h3>MRI Brain Tumor Segmentation Using U-Net</h3>
+                    <h3 data-en="MRI Brain Tumor Segmentation Using U-Net" data-zh="基于U-Net的MRI脑肿瘤分割">MRI Brain Tumor Segmentation Using U-Net</h3>
                     <p class="date">Sep 2023 – Dec 2023</p>
                 </div>
-                <p class="organization">Personal Project | Advisor: Prof. Terence D Sanger</p>
+                <p class="organization" data-en="Personal Project | Advisor: Prof. Terence D Sanger" data-zh="个人项目 | 导师：Terence D Sanger教授">Personal Project | Advisor: Prof. Terence D Sanger</p>
                 <ul class="exp-details">
-                    <li>Used Python and TensorFlow to implement U-Net for MRI brain tumor image segmentation</li>
-                    <li>Employed skip connections and Dice loss to address small tumor regions and blurred boundaries</li>
+                    <li data-en="Used Python and TensorFlow to implement U-Net for MRI brain tumor image segmentation" data-zh="使用Python和TensorFlow实现U-Net进行MRI脑肿瘤图像分割">Used Python and TensorFlow to implement U-Net for MRI brain tumor image segmentation</li>
+                    <li data-en="Employed skip connections and Dice loss to address small tumor regions and blurred boundaries" data-zh="采用跳跃连接和Dice损失来处理小肿瘤区域和模糊边界">Employed skip connections and Dice loss to address small tumor regions and blurred boundaries</li>
                 </ul>
             </div>
             <div class="exp-item">
                 <div class="exp-header">
-                    <h3>Reinforcement Learning Algorithm for Self-Play in Chinese Chess</h3>
+                    <h3 data-en="Reinforcement Learning Algorithm for Self-Play in Chinese Chess" data-zh="中国象棋自博弈强化学习算法">Reinforcement Learning Algorithm for Self-Play in Chinese Chess</h3>
                     <p class="date">Sep 2023 – Dec 2023</p>
                 </div>
-                <p class="organization">Project Leader | Advisor: Prof. Pramod Khargonekar</p>
+                <p class="organization" data-en="Project Leader | Advisor: Prof. Pramod Khargonekar" data-zh="项目负责人 | 导师：Pramod Khargonekar教授">Project Leader | Advisor: Prof. Pramod Khargonekar</p>
                 <ul class="exp-details">
-                    <li>Employed Python and TensorFlow/PyTorch with Monte Carlo Tree Search (MCTS) plus policy/value networks for training</li>
-                    <li>Improved the model iteratively with self-play data and optimized decision-making using DQN and policy gradient methods</li>
+                    <li data-en="Employed Python and TensorFlow/PyTorch with Monte Carlo Tree Search (MCTS) plus policy/value networks for training" data-zh="使用Python和TensorFlow/PyTorch结合蒙特卡洛树搜索（MCTS）以及策略/价值网络进行训练">Employed Python and TensorFlow/PyTorch with Monte Carlo Tree Search (MCTS) plus policy/value networks for training</li>
+                    <li data-en="Improved the model iteratively with self-play data and optimized decision-making using DQN and policy gradient methods" data-zh="通过自博弈数据迭代改进模型，使用DQN和策略梯度方法优化决策">Improved the model iteratively with self-play data and optimized decision-making using DQN and policy gradient methods</li>
                 </ul>
             </div>
             <div class="exp-item">
                 <div class="exp-header">
-                    <h3>Cognitive Reconfigurable Radio System</h3>
+                    <h3 data-en="Cognitive Reconfigurable Radio System" data-zh="认知可重构无线电系统">Cognitive Reconfigurable Radio System</h3>
                     <p class="date">Jan 2022 – Apr 2022</p>
                 </div>
-                <p class="organization">Online Course Project Leader | Advisor: Prof. Danijela Cabric</p>
+                <p class="organization" data-en="Online Course Project Leader | Advisor: Prof. Danijela Cabric" data-zh="在线课程项目负责人 | 导师：Danijela Cabric教授">Online Course Project Leader | Advisor: Prof. Danijela Cabric</p>
                 <ul class="exp-details">
-                    <li>Built a system model with primary users, malicious users, cognitive radios, and a fusion center, then simulated it in MATLAB</li>
-                    <li>Proposed a reputation-weighted cooperative spectrum sensing algorithm to defend against SSDF attacks, achieving 90% accuracy</li>
-                    <li>Related findings published in <em>Cognitive Radio: SSDF Attack and Security</em></li>
+                    <li data-en="Built a system model with primary users, malicious users, cognitive radios, and a fusion center, then simulated it in MATLAB" data-zh="构建包含主用户、恶意用户、认知无线电和融合中心的系统模型，并在MATLAB中进行仿真">Built a system model with primary users, malicious users, cognitive radios, and a fusion center, then simulated it in MATLAB</li>
+                    <li data-en="Proposed a reputation-weighted cooperative spectrum sensing algorithm to defend against SSDF attacks, achieving 90% accuracy" data-zh="提出基于信誉权重的协作频谱感知算法来防御SSDF攻击，达到90%的准确率">Proposed a reputation-weighted cooperative spectrum sensing algorithm to defend against SSDF attacks, achieving 90% accuracy</li>
+                    <li data-en="Related findings published in Cognitive Radio: SSDF Attack and Security" data-zh="相关研究成果发表在《认知无线电：SSDF攻击与安全》">Related findings published in <em>Cognitive Radio: SSDF Attack and Security</em></li>
                 </ul>
             </div>
             <div class="exp-item">
                 <div class="exp-header">
-                    <h3>Research on Tunable-Frequency Heat-Conducting Wave-Absorbing Materials</h3>
+                    <h3 data-en="Research on Tunable-Frequency Heat-Conducting Wave-Absorbing Materials" data-zh="可调频导热吸波材料研究">Research on Tunable-Frequency Heat-Conducting Wave-Absorbing Materials</h3>
                     <p class="date">Aug 2021 – Oct 2022</p>
                 </div>
-                <p class="organization">Advisors: Prof. Xie Guozhi, Prof. Cheng Yong, Prof. Wang Zimin, etc.</p>
+                <p class="organization" data-en="Advisors: Prof. Xie Guozhi, Prof. Cheng Yong, Prof. Wang Zimin, etc." data-zh="导师：谢国治教授、程勇教授、王自民教授等">Advisors: Prof. Xie Guozhi, Prof. Cheng Yong, Prof. Wang Zimin, etc.</p>
                 <ul class="exp-details">
-                    <li>Prepared anisotropic flake alloys using composite coupling agent technology, and incorporated high thermal conductivity magnetic composites to enhance the material's thermal conduction</li>
-                    <li>Collaborated with BXLLD and ZTE; applied for multiple patents; won a Silver Award at the 7th China International "Internet+" Innovation and Entrepreneurship Competition</li>
+                    <li data-en="Prepared anisotropic flake alloys using composite coupling agent technology, and incorporated high thermal conductivity magnetic composites to enhance the material's thermal conduction" data-zh="使用复合偶联剂技术制备各向异性片状合金，并加入高导热磁性复合材料以增强材料的热传导性">Prepared anisotropic flake alloys using composite coupling agent technology, and incorporated high thermal conductivity magnetic composites to enhance the material's thermal conduction</li>
+                    <li data-en="Collaborated with BXLLD and ZTE; applied for multiple patents; won a Silver Award at the 7th China International Internet+ Innovation and Entrepreneurship Competition" data-zh="与BXLLD和中兴通讯合作；申请多项专利；获得第七届中国国际"互联网+"大学生创新创业大赛银奖">Collaborated with BXLLD and ZTE; applied for multiple patents; won a Silver Award at the 7th China International "Internet+" Innovation and Entrepreneurship Competition</li>
                 </ul>
             </div>
         </div>
@@ -176,28 +181,28 @@
 
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title" data-en="Skills" data-zh="技能">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <h3><i class="fas fa-code"></i> <span data-en="Programming Languages" data-zh="编程语言">Programming Languages</span></h3>
                     <ul class="skill-list">
                         <li>Python</li>
                         <li>C</li>
                         <li>Matlab</li>
                         <li>SQL</li>
-                        <li>Verilog HDL (basic)</li>
+                        <li><span data-en="Verilog HDL (basic)" data-zh="Verilog HDL（基础）">Verilog HDL (basic)</span></li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Deep Learning Frameworks</h3>
+                    <h3><i class="fas fa-brain"></i> <span data-en="Deep Learning Frameworks" data-zh="深度学习框架">Deep Learning Frameworks</span></h3>
                     <ul class="skill-list">
                         <li>TensorFlow</li>
                         <li>PyTorch</li>
-                        <li>Large-scale model training in cluster environments</li>
+                        <li data-en="Large-scale model training in cluster environments" data-zh="集群环境下大规模模型训练">Large-scale model training in cluster environments</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Software Tools</h3>
+                    <h3><i class="fas fa-tools"></i> <span data-en="Software Tools" data-zh="软件工具">Software Tools</span></h3>
                     <ul class="skill-list">
                         <li>Vivado Design Suite</li>
                         <li>Proteus</li>
@@ -209,27 +214,27 @@
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Security Skills</h3>
+                    <h3><i class="fas fa-shield-alt"></i> <span data-en="Security Skills" data-zh="安全技能">Security Skills</span></h3>
                     <ul class="skill-list">
-                        <li>Software vulnerability analysis</li>
-                        <li>Reverse engineering</li>
-                        <li>Malware analysis</li>
-                        <li>Fuzzing</li>
-                        <li>Basic network security</li>
+                        <li data-en="Software vulnerability analysis" data-zh="软件漏洞分析">Software vulnerability analysis</li>
+                        <li data-en="Reverse engineering" data-zh="逆向工程">Reverse engineering</li>
+                        <li data-en="Malware analysis" data-zh="恶意软件分析">Malware analysis</li>
+                        <li data-en="Fuzzing" data-zh="模糊测试">Fuzzing</li>
+                        <li data-en="Basic network security" data-zh="基础网络安全">Basic network security</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <h3><i class="fas fa-language"></i> <span data-en="Languages" data-zh="语言能力">Languages</span></h3>
                     <ul class="skill-list">
-                        <li>Mandarin (native)</li>
-                        <li>English (daily communication)</li>
+                        <li data-en="Mandarin (native)" data-zh="中文（母语）">Mandarin (native)</li>
+                        <li data-en="English (daily communication)" data-zh="英语（日常交流）">English (daily communication)</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-palette"></i> Others</h3>
+                    <h3><i class="fas fa-palette"></i> <span data-en="Others" data-zh="其他">Others</span></h3>
                     <ul class="skill-list">
-                        <li>Violin (proficient)</li>
-                        <li>Painting (proficient)</li>
+                        <li data-en="Violin (proficient)" data-zh="小提琴（熟练）">Violin (proficient)</li>
+                        <li data-en="Painting (proficient)" data-zh="绘画（熟练）">Painting (proficient)</li>
                     </ul>
                 </div>
             </div>
@@ -238,12 +243,12 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title" data-en="Contact Me" data-zh="联系我">Contact Me</h2>
             <div class="contact-content">
                 <div class="contact-info-large">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p><a href="mailto:liangys5@uci.edu">liangys5@uci.edu</a></p>
+                        <p><a href="mailto:andrewsong.dev@gmail.com">andrewsong.dev@gmail.com</a></p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -252,10 +257,6 @@
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <p><a href="tel:+8613593183233">(+86) 13593183233</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Irvine, California</p>
                     </div>
                 </div>
                 <div class="social-links">
@@ -268,7 +269,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Liangyu Song. All rights reserved.</p>
+            <p data-en="© 2025 Liangyu Song. All rights reserved." data-zh="© 2025 宋良宇。保留所有权利。">&copy; 2025 Liangyu Song. All rights reserved.</p>
         </div>
     </footer>
 

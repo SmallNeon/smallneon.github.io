@@ -122,6 +122,12 @@ header {
     transition: var(--transition);
 }
 
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-links {
     display: flex;
     justify-content: center;
@@ -152,6 +158,29 @@ header {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+/* Language Toggle Button */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+}
+
+#langBtn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+#langBtn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
 }
 
 .hamburger {
@@ -474,8 +503,19 @@ footer {
     .hamburger {
         display: block;
         position: absolute;
-        right: 20px;
+        right: 70px;
         top: 15px;
+    }
+
+    .lang-toggle {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+    }
+
+    #langBtn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
     
     .hamburger.active .bar:nth-child(2) {

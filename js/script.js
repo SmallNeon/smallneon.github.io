@@ -1,6 +1,41 @@
 // JavaScript for portfolio site
 
+// Language toggle functionality
+let currentLanguage = 'en';
+
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'zh' : 'en';
+    updateLanguageContent();
+    updateLanguageButton();
+}
+
+function updateLanguageContent() {
+    const elements = document.querySelectorAll('[data-en][data-zh]');
+    
+    elements.forEach(element => {
+        const enText = element.getAttribute('data-en');
+        const zhText = element.getAttribute('data-zh');
+        
+        if (currentLanguage === 'zh') {
+            element.textContent = zhText;
+        } else {
+            element.textContent = enText;
+        }
+    });
+}
+
+function updateLanguageButton() {
+    const langBtn = document.getElementById('langBtn');
+    if (langBtn) {
+        langBtn.textContent = currentLanguage === 'en' ? '中文' : 'English';
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize language content
+    updateLanguageContent();
+    updateLanguageButton();
+
     // Mobile navigation toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
